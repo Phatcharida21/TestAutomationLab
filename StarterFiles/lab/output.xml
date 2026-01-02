@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-02T21:39:17.327439" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab4" source="D:\663380608-3\3-2\SA\Lab\Lab4\TestAutomationLab\StarterFiles\lab\Lab4.robot">
+<test id="s1-t1" name="Test Scenario ID UAT-Lab04-001: TC1 Open Workshop Registration Page" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:17.568155" level="INFO">Opening browser 'chrome' to base url 'file:///D:/663380608-3/3-2/SA/Lab/Lab4/TestAutomationLab/StarterFiles/Registration.html'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T21:39:17.567727" elapsed="1.777243"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:19.357830" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T21:39:19.345880" elapsed="0.012166"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:19.378714" level="INFO">Current page contains text 'Workshop Registration'.</msg>
+<arg>Workshop Registration</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-02T21:39:19.358468" elapsed="0.020388"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:19.523254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC1_Open_Workshop_Registration_Page.png"&gt;&lt;img src="TC1_Open_Workshop_Registration_Page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>TC1_Open_Workshop_Registration_Page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-02T21:39:19.379280" elapsed="0.144135"/>
+</kw>
+<tag>Scenario_UAT-Lab04-001</tag>
+<status status="PASS" start="2026-01-02T21:39:17.566503" elapsed="1.957285"/>
+</test>
+<test id="s1-t2" name="Test Scenario ID UAT-Lab04-001: TC2 Register Success" line="17">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:19.525801" level="INFO">Typing text 'Somyod' into text field 'firstname'.</msg>
+<arg>firstname</arg>
+<arg>Somyod</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:19.525278" elapsed="0.379453"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:19.905681" level="INFO">Typing text 'Sodsai' into text field 'lastname'.</msg>
+<arg>lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:19.905270" elapsed="0.101275"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.007255" level="INFO">Typing text 'CS KKU' into text field 'organization'.</msg>
+<arg>organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.006951" elapsed="0.095558"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.103459" level="INFO">Typing text 'somyod@kkumail.com' into text field 'email'.</msg>
+<arg>email</arg>
+<arg>somyod@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.102998" elapsed="0.098068"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.201868" level="INFO">Typing text '091-001-1234' into text field 'phone'.</msg>
+<arg>phone</arg>
+<arg>091-001-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.201499" elapsed="0.118296"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.321504" level="INFO">Clicking button 'registerButton'.</msg>
+<arg>registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.321170" elapsed="0.081638"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.413052" level="INFO">Page title is 'Success'.</msg>
+<arg>Success</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.403233" elapsed="0.009955"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>${SUCCESS_FRAGMENT}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.413530" elapsed="0.009718"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.437537" level="INFO">Current page contains text 'Thank you for registering with us.'.</msg>
+<arg>Thank you for registering with us.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.423620" elapsed="0.014009"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.448700" level="INFO">Current page contains text 'We will send a confirmation to your email soon.'.</msg>
+<arg>We will send a confirmation to your email soon.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.438081" elapsed="0.010986"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:39:20.583357" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC2_Register_Success.png"&gt;&lt;img src="TC2_Register_Success.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>TC2_Register_Success.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.449917" elapsed="0.133590"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-02T21:39:20.584452" elapsed="2.215619"/>
+</kw>
+<tag>Scenario_UAT-Lab04-001</tag>
+<status status="PASS" start="2026-01-02T21:39:19.524416" elapsed="3.276570"/>
+</test>
+<status status="PASS" start="2026-01-02T21:39:17.328998" elapsed="5.473601"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Scenario_UAT-Lab04-001</stat>
+</tag>
+<suite>
+<stat name="Lab4" id="s1" pass="2" fail="0" skip="0">Lab4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
